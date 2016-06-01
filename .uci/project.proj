@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ci>
+    <project name="SVA Demo APP" type="personal" product="SVA Demo APP" version="SVA Demo APP V100R001C10" team="uDeck" >
+        <trigger>
+            <modification type="svn" path="${CODE_PATH}\src"></modification>
+        </trigger>
+        <build>
+            <job name="all" tasks="sourcemonitor,compile,ut,st,pclint"/>
+        </build>
+    </project>    
+</ci>

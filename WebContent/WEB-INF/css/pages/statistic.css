@@ -1,0 +1,101 @@
+.r-top
+{
+	height: 35px;
+	border-bottom-color: #e1e6ef;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	background-image: none;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgb(255, 255, 255);
+	margin:-20px -20px 0 -20px;
+	padding: 5px 0 0 40px;
+}
+.chartArea
+{
+	overflow: auto;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	clear: both;
+	zoom: 1;
+}
+.infoArea
+{
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.infoBox
+{
+	width: 30%;
+	height: 120px;
+	border-color: #dbdee0;
+	border-width: 1px;
+	border-style: solid;
+	display: inline-block;
+	background-image: none;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgb(255, 255, 255);
+}
+.infoTop
+{
+	height: 30px;
+	color: #717e9a;
+	line-height: 30px;
+	margin-top: 15px;
+}
+.infoNumber
+{
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	font-size: 35px;
+	color: #108ec8;
+}
+.fleft
+{
+	float: left;
+}
+.fright
+{
+	float: right;
+}
+.chartBox
+{
+	overflow: hidden;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	background-image: none;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgb(255, 255, 255);
+}
+.input-append input
+{
+	border:1px solid #ccc;
+	padding:2px 0 2px 10px;
+	background-color: #ffffff;
+}
+.input-append .add-on
+{
+	padding:2px 5px;
+	border-left:none;
+}

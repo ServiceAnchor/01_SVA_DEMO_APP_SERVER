@@ -1,0 +1,363 @@
+<html>
+
+<head>
+  <title>4.4.2 预估偏差设定 - user2</title>
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="Macrobject Word-2-CHM">
+  <link rel="stylesheet" href="Word2Chm.css" type="text/css">
+  <link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='text-justify-trim:punctuation'>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td class="moHeader">&nbsp;4.4.2 预估偏差设定</td>
+    </tr>
+  </table>
+  
+  <p></p>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>定位精度测试预估偏差设定公式：</span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>本公式用于计算<span
+lang=EN-US>LTE lampsite</span>共小区下的定位精度。计算原理是输入<span lang=EN-US>pRRU</span>部署区域面积和<span
+lang=EN-US>pRRU</span>数目，计算得到<span lang=EN-US>pRRU</span>之间的平均间距，在按照室内场景估算平均定位精度。<span
+lang=EN-US>pRRU</span>平均间距：<span lang=EN-US><img width=146 height=44 id="图片 1"
+src="temp.files/image040.gif"></span>（<span lang=EN-US>a</span>、<span
+lang=EN-US>b</span>是读取地图的长、宽；<span lang=EN-US>n</span>是<span lang=EN-US>pRRU</span>的个数，由用户自己输入）</span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>pRRU</span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>部署区域的确定如下图，可以获得区域长度<span
+lang=EN-US>a</span>和宽度<span lang=EN-US>b</span>：</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:24.0pt;
+line-height:150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;
+font-family:宋体'><img width=577 height=240 id="对象 2"
+src="temp.files/image041.gif"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-family:黑体'>图<span lang=EN-US>35 pRRU</span>部署区域示例</span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>这个公式得到的平均精度是指按照定位网规原则设计<span
+lang=EN-US>pRRU</span>安装位置，可以达到的精度。如果是已经部署开通<span lang=EN-US>Lampsite</span>，没有按照定位特性要求进行<span
+lang=EN-US>pRRU</span>规划，我们称其为存量<span lang=EN-US>Lampsite</span>场景，定位精度要乘以<span
+lang=EN-US>1.5</span>倍。例如：下面是自动计算公式，输入绿色区域值，输出值在橙色区域显示：</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=369
+ style='width:277.0pt;margin-left:5.15pt;border-collapse:collapse'>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>长度<span
+  lang=EN-US> a=</span></span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#92D050;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>55</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>宽度<span
+  lang=EN-US> b=</span></span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#92D050;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>56</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>pRRU</span><span style='font-size:12.0pt;line-height:150%;
+  font-family:宋体;color:black'>数目<span lang=EN-US> n=</span></span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#92D050;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>14</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>　</span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:150%'><span
+  style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>　</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>pRRU</span><span style='font-size:12.0pt;line-height:150%;
+  font-family:宋体;color:black'>平均间距<span lang=EN-US> d=</span></span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>20.2 </span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>开阔场景新建<span
+  lang=EN-US>Lampsite</span>定位精度<span lang=EN-US>=</span></span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFC000;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>5.1 </span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>多隔断场景新建<span
+  lang=EN-US>Lampsite</span>定位精度<span lang=EN-US>=</span></span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFC000;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>6.7 </span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>开阔场景存量<span
+  lang=EN-US>Lampsite</span>定位精度<span lang=EN-US>=</span></span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFC000;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>7.6 </span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width=282 nowrap style='width:211.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>多隔断场景存量<span
+  lang=EN-US>Lampsite</span>定位精度<span lang=EN-US>=</span></span></p>
+  </td>
+  <td width=87 nowrap style='width:65.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFC000;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span
+  lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;
+  color:black'>10.1 </span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><i><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;background:yellow'>注意<b>：</b></span></i></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><i><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;background:yellow'>机场、大型商场等开阔室内场景，定位精度为<span
+lang=EN-US>pRRU</span>平均间距<span lang=EN-US>1/4</span>。办公室等多隔断场景，定位精度为<span
+lang=EN-US>pRRU</span>平均间距<span lang=EN-US>1/3</span>。</span></i></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>预估偏差设定通过在页面上选择商场名称、楼层，填写长度<span
+lang=EN-US>A</span>、宽度<span lang=EN-US>B</span>、<span lang=EN-US>pRRU</span>数目，选择：使用场景，从而得出结果，结果保留两位小数。</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:宋体'><img width=881 height=318
+src="temp.files/image042.jpg"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+style='line-height:150%;font-family:黑体'>图<span lang=EN-US>36 </span>预估偏差设定页面</span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>预估偏差设定信息添加：</span></p>
+
+<p class=MsoNormal style='margin-left:42.3pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>进入【定位精度测试】<span
+lang=EN-US> -- </span>【预估偏差设定】页面；</span></p>
+
+<p class=MsoNormal style='margin-left:42.3pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>点击【添加】按钮，录入所有信息；</span></p>
+
+<p class=MsoNormal style='margin-left:42.3pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>点击【确定】按钮，保存预估偏差设定信息；</span></p>
+
+<p class=MsoNormal style='margin-left:42.3pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>保存成功，预估偏差设定信息会自动添加到下面的列表中。</span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;line-height:150%'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>预估偏差设定信息删除：</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>进入【定位精度测试】<span
+lang=EN-US> -- </span>【预估偏差设定】页面；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>点击要删除的预估偏差设定信息对应的【删除】按钮；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>删除成功后，被删除预估偏差设定信息将在下面的列表中删除。</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt;line-height:150%'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>预估偏差设定信息修改：</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>1. </span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>进入【定位精度测试】<span
+lang=EN-US> -- </span>【预估偏差设定】页面；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>2. </span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>点击【编辑】按钮，编辑要修改的信息；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>3. </span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>修改后，点击【确定】按钮，保存修改后的预估偏差设定信息；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>4. </span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>保存成功，修改后的预估偏差设定信息会将原有的预估偏差设定信息覆盖，从而添加到下面列表中。</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><img
+width=882 height=495 src="temp.files/image043.jpg"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+style='line-height:150%;font-family:黑体'>图<span lang=EN-US>37 </span>预估偏差设定添加页面</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>图<span lang=EN-US>37</span>说明：</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>添加操作：</span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>点击【添加】按钮，弹出新增配置页面；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>商场名称：通过下拉框选择（商场名称由商场管理模块提供），例如<span
+lang=EN-US>U6</span>食堂、王府井；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>楼层：通过下拉框选择（楼层由地图管理模块提供）；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>使用场景：一共有四个场景，分别为：</span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>开阔场景新建<span
+lang=EN-US>Lampsite</span>、多隔断场景新建<span lang=EN-US>Lampsite</span>、开阔场景存量<span
+lang=EN-US>Lampsite</span>、多隔断场景存量<span lang=EN-US>Lampsite</span>；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>长度<span lang=EN-US>A</span>：布置场景的实际长度；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>宽度<span lang=EN-US>B</span>：布置场景的实际宽度；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>pRRU</span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>数目：在布置的场景安装<span
+lang=EN-US>pRRU</span>的个数；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>确定操作：点击【确定】按钮，进行预估偏差设定信息的添加</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>取消操作：点击【取消】按钮，取消对已添加的预估偏差设定信息进行保存。取消添加后，列表中无新增预估偏差设定信息；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>10.<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>编辑操作：点击【编辑】按钮后，在输入部分展示该条信息供用户修改，用户修改后点击【确定】按钮，修改的数据信息将会覆盖原有的数据信息；</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:-21.0pt;line-height:
+150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>11.<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>删除操作：点击【删除】按钮，确认删除后，则该条数据将从列表中和数据库中删除，并刷新页面展示最新的消息信息。</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:宋体'>&nbsp;</span></p>
+
+
+</div>
+  <p></p>
+  <hr class="moHR" />
+  <span class="moCopyright">
+    SVADemo V1.2 使用手册
+  </span>
+
+</body>
+
+</html>

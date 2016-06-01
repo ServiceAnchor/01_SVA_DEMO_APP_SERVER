@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+  <meta http-equiv=Content-Type content="text/html; charset=gb2312">
+  <meta name="GENERATOR" content="Macrobject Word-2-CHM">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SVADemo V1.2T 用户使用手册（配套工具）——服务器端">
+		<param name="Local" value="_1.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="1. 文档目的">
+		<param name="Local" value="_2.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="2. 系统简介">
+		<param name="Local" value="_3.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="3. 软硬件推荐设置">
+		<param name="Local" value="_4.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4. 服务器端功能及操作">
+		<param name="Local" value="_5.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.1 登录系统">
+		<param name="Local" value="_6.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.2 信息管理">
+		<param name="Local" value="_7.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.2.1 商场管理">
+		<param name="Local" value="_8.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.2.2 SVA管理">
+		<param name="Local" value="_9.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.2.3 地图管理">
+		<param name="Local" value="_10.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.2.4 消息推送管理">
+		<param name="Local" value="_11.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.2.5 商户信息管理">
+		<param name="Local" value="_12.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.2.6 区域信息录入">
+		<param name="Local" value="_13.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3 客流分析">
+		<param name="Local" value="_14.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3.1 客流实时热力图">
+		<param name="Local" value="_15.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3.2 时间段内客流热力图">
+		<param name="Local" value="_16.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3.3 客流实时散点图">
+		<param name="Local" value="_17.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3.4 历史轨迹">
+		<param name="Local" value="_18.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3.5 历史客流曲线图">
+		<param name="Local" value="_19.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3.6 历史客流柱状图">
+		<param name="Local" value="_20.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3.7 区域历史客流曲线图">
+		<param name="Local" value="_21.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.3.8 区域地点图">
+		<param name="Local" value="_22.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.4 定位精度测试">
+		<param name="Local" value="_23.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.4.1 口令管理">
+		<param name="Local" value="_24.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.4.2 预估偏差设定">
+		<param name="Local" value="_25.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.4.3 汇总结果">
+		<param name="Local" value="_26.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.5 工具">
+		<param name="Local" value="_27.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.5.1 Bluemix 对接">
+		<param name="Local" value="_28.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.5.2 Ping操作">
+		<param name="Local" value="_29.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.5.3 pRRU配置">
+		<param name="Local" value="_30.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.5.4 版本下载">
+		<param name="Local" value="_31.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.5.5 APK下载">
+		<param name="Local" value="_32.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="4.6 注销登录">
+		<param name="Local" value="_33.htm">
+		</OBJECT>
+</UL>
+</BODY>
+</HTML>

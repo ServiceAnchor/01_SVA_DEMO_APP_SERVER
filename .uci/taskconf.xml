@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ci>
+    <properties>
+        <!-- ${UDECK_CI_CONFIG_DIR}是一个uDeck内置变量，其值是.uci文件夹路径，可以用该变量获取本地代码库根路径。 -->
+        <property name="CODE_PATH" value="${UDECK_CI_CONFIG_DIR}/../"  />
+        <property name="script_path" value="${CODE_PATH}/script"/>
+        <property name="output_path" value="${CODE_PATH}/output"/>
+        <property name="src" value="${CODE_PATH}/src,${CODE_PATH}/include"/>
+        <property name="ut" value="${CODE_PATH}/ut"/>
+        <property name="DELAY" value="100"/>
+    </properties>
+    <tasks>
+        <task name="compile" type="compile" modification="${src}" executable="${script_path}\compile.bat" estimate="" reports="${output_path}\compile.txt" />        
+        <task name="ut" type="dt" modification="${src},${ut}" executable="${script_path}\ut.bat"  reports="${output_path}\ut.xml"/>
+        <task name="st" type="dt" modification="${src},${ut}" workingdir="${script_path}" executable="st.bat" args="2" estimate="3" timeout="5"/>
+        <task name="pclint" modification="${src}" type="pclint" executable="${script_path}\pclint.bat" args="inc"/>
+        <task name="sourcemonitor" executable="${script_path}\cc.bat" reports="${output_path}\cc.xml"/>
+    </tasks>
+</ci>

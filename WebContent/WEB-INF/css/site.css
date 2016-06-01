@@ -1,0 +1,50 @@
+﻿html { filter: expression(document.execCommand("BackgroundImageCache", false, true)); }
+html, body { margin: 0; padding: 0; }
+body { font-size: 14px; background: #B0CCE8;}
+
+a:link { color: #505abc /*#034af3*/; text-decoration: underline; }
+a:visited { color: #505abc; }
+a:hover { color: #1d60ff; text-decoration: none; }
+a:active { color: #12eb87; }
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+#header { font-size: 12px; color: #000; height: 140px; overflow: hidden; line-height: 25px; padding: 0 0px;background: #DDEEF8; }
+#header #title { display: block; float: left; text-align: left; background: url(../images/logo.png) no-repeat; text-indent: -999px; width: 350px; height: 117px; margin-top: 30px; margin-left:20px;}
+
+/* IE6 Fix
+----------------------------------------------------------*/
+#header #title { behavior: url(/iepngfix.htc); }
+
+/* MISC  
+----------------------------------------------------------*/
+.clear { clear: both; }
+
+.hidden { display: none; }
+
+/* TREELITE  
+----------------------------------------------------------*/
+.input_box .treelite_treebox { }
+.input_box .treelite_treenodebox { background: #fff !important; }
+.input_box .treelite_treebox .selected { background: #DDEEF8; }
+
+.treelite_treebox {background: #fff; }
+.treelite_treebox .treelite_treenodebox { list-style: none; padding-left: 30px; margin: 0; background: #fff; }
+.treelite_treerootnodebox { padding-left: 0 !important; }
+.treelite_treenode { cursor: pointer; line-height: 20px; white-space: nowrap;_width:120%; }
+.treelite_treenode a{text-decoration:none;}
+.treelite_treenode a:hover{text-decoration:underline;}
+.treelite_treenode_collapser { display: block; float: left; width: 16px; height: 16px;}
+.treelite_treenode_expand { background: url(../images/tree_arrows.gif) left top; display: block; float: left; width: 16px; height: 16px; }
+.treelite_treenode_expand:hover { background: url(../images/tree_arrows.gif) -32px top; }
+.treelite_treenode_collapse { background: url(../images/tree_arrows.gif) -17px top; display: block; float: left; width: 16px; height: 16px; }
+.treelite_treenode_collapse:hover { background: url(../images/tree_arrows.gif) -49px top; }
+.treelite_treenode_parenticon { background: url(../images/folder.gif) no-repeat; display: block; float: left; width: 20px; height: 16px; }
+.treelite_treenode_close { background: url(../images/folder-closed.gif) no-repeat !important; display: block; float: left; width: 20px; height: 16px; }
+.treelite_treenode_childicon { background: url(../images/file.gif) left 2px no-repeat; display: block; float: left; width: 20px; height: 16px; }
+.treelite_treebox .selected { background: #DDEEF8; }
+
+.fourcolumn_form_box .input_box .treelite_treenodebox { background: #fff !important; }
+.fourcolumn_form_box .input_box .treelite_treebox .selected { background: #DDEEF8; }
+
+.datepicker { background: url(../images/calendar.png) 3px center no-repeat; padding-left: 25px !important; width: 128px !important; }

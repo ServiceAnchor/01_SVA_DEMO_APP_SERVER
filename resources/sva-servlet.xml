@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/mvc  
+    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<!-- 默认的注解映射的支持 -->
+	<mvc:annotation-driven />
+
+	<!-- 静态资源映射 -->
+	<mvc:resources mapping="/js/**" location="/WEB-INF/js/" />
+	<mvc:resources mapping="/css/**" location="/WEB-INF/css/" />
+	<mvc:resources mapping="/fonts/**" location="/WEB-INF/fonts/" />
+	<mvc:resources mapping="/plugins/**" location="/WEB-INF/plugins/" />
+	<mvc:resources mapping="/images/**" location="/WEB-INF/images/" />
+	<mvc:resources mapping="/upload/**" location="/WEB-INF/upload/" />
+	<mvc:resources mapping="/files/**" location="/WEB-INF/files/" />
+    <mvc:resources mapping="/helpcn/**" location="/WEB-INF/helpcn/" />
+    <mvc:resources mapping="/helpen/**" location="/WEB-INF/helpen/" />
+    <mvc:resources mapping="/version/**" location="/WEB-INF/version/" />
+	<!-- 当上面要访问的静态资源不包括在上面的配置中时，则根据此配置来访问 -->
+	<mvc:default-servlet-handler />
+	<!--启用自动扫描 -->
+	<context:component-scan base-package="com.sva.web.controllers" />
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<!-- 国际化信息所在的文件名 -->
+		<property name="basename" value="messages" />
+		<!-- 如果在国际化资源文件中找不到对应代码的信息，就用这个代码作为名称 -->
+		<property name="useCodeAsDefaultMessage" value="true" />
+	</bean>
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<!-- 支持后台读取配置文件 -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">  
+		<property name="locations">  
+			<list>  
+				<value>classpath:db.properties</value>  
+			</list>  
+		</property>  
+	</bean> 	
+
+	<!-- 支持上传文件 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 设置上传文件的最大尺寸为1MB -->
+		<property name="maxUploadSize">
+			<value>20971520</value>
+		</property>
+		<property name="defaultEncoding">
+			<value>UTF-8</value>
+		</property>
+		<property name="resolveLazily" value="true"/> 
+	</bean>
+
+
+	<!-- 国际化配置 -->
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver" />
+	<mvc:interceptors>
+		<!-- 国际化操作拦截器 如果采用基于（请求/Session/Cookie）则必需配置 --> 
+	    <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />  
+	    <!-- 如果不定义 mvc:mapping path 将拦截所有的URL请求 -->
+	    <bean class="com.sva.web.auth.AuthInterceptor"></bean>
+		
+	</mvc:interceptors>
+
+
+</beans>
